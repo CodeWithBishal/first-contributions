@@ -46,3 +46,16 @@ body {
     line-height: 1.5;
   }
   
+
+  .welcome {
+    margin: 0 20rem;
+    color: black;
+  }
+  .welcome h5 {
+    font-size: 2rem;
+    padding: 0;
+  }
+  .welcome p {
+    font-size: 1.4rem;
+    font-weight: 100;
+  }
