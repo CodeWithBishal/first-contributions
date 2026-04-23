@@ -1,61 +1,113 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #4caf50;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-    font-size: 1.5rem;
-  }
-  
-  .container {
-    max-width: 900px;
-    margin: 2rem auto;
-    padding: 1rem;
-  }
-  
-  .brand-block {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 1.5rem;
-    padding: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .brand-block h2 {
-    color: #333;
-    font-size: 1.2rem;
-  }
-  
-  .brand-block img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .brand-block p {
-    color: #555;
-    line-height: 1.5;
-  }
-  
+* {
+  box-sizing: border-box;
+}
 
-  .welcome {
-    margin: 0 20rem;
-    color: black;
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #1f2937;
+  background: radial-gradient(circle at top left, rgba(99,102,241,0.16), transparent 28%),
+    radial-gradient(circle at bottom right, rgba(16,185,129,0.12), transparent 28%),
+    #eef2ff;
+}
+
+header {
+  background: #4338ca;
+  color: #fff;
+  padding: 1.4rem 1rem;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+}
+
+header h1 {
+  margin: 0;
+  font-size: clamp(1.9rem, 2.6vw, 2.8rem);
+  letter-spacing: -0.03em;
+}
+
+.container {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+}
+
+.hero {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  border-radius: 28px;
+  padding: 2.2rem 2rem;
+  margin: -2rem auto 2rem;
+  max-width: 840px;
+  text-align: center;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+}
+
+.hero h2 {
+  margin: 0 0 0.85rem;
+  font-size: clamp(2rem, 3vw, 3rem);
+  color: #1e293b;
+}
+
+.hero p {
+  margin: 0;
+  color: #475569;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.brand-block {
+  background: #ffffff;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 24px;
+  overflow: hidden;
+  padding: 1rem;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.brand-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 24px 52px rgba(15, 23, 42, 0.14);
+}
+
+.brand-block h2 {
+  margin: 0 0 0.9rem;
+  font-size: 1.1rem;
+  color: #111827;
+}
+
+.brand-block img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 18px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.brand-block p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.7;
+  font-size: 0.98rem;
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    margin: 0 auto 1.5rem;
+    border-radius: 20px;
+    padding: 1.6rem 1.4rem;
   }
-  .welcome h5 {
-    font-size: 2rem;
-    padding: 0;
+
+  .brand-block img {
+    height: 150px;
   }
-  .welcome p {
-    font-size: 1.4rem;
-    font-weight: 100;
-  }
+}
