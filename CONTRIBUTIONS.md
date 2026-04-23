@@ -13,3 +13,6 @@ Thank you for considering contributing to the **Open Source Beginners Project**!
    ```bash
    git clone https://github.com/CodeWithBishal/first-contributions.git
    ```
+
+
+Renato MAlebo (https://github.com/Renatomalebo10)
